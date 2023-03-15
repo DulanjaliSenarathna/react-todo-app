@@ -14,8 +14,18 @@ function Button({children, type , varient, ...rest}) {
     styles[`button--${buttonTypes[varient]}`]])} 
     type={type === 'submit' ? 'submit' : 'button'}
     {...rest}>
-        {children}</button>
-  )
+        {children}
+    </button>
+  );
 }
 
+function SelectButton({children,id, ...rest}){
+    return(
+        <select className={getClasses([styles.button, styles.button__select])}{...rest}>
+            {children}
+        </select>
+    )
+}
+
+export {SelectButton}
 export default Button
