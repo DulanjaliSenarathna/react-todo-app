@@ -7,7 +7,7 @@ const AppHeader = () => {
   return (
     <div className={styles.appHeader}>
         
-        <Button varient='primary'>Click Me</Button>
+        <Button varient='primary'>Add Task</Button>
         <SelectButton id="status">
             <option value="all">ALL</option>
             <option value="incomplete">Incomplete</option>
