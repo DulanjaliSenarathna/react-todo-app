@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { toast } from 'react-hot-toast';
 import {MdOutlineClose} from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { v4 as uuid} from 'uuid';
@@ -21,7 +22,11 @@ const handleSubmit = (e) => {
             title,
             status,
             time: new Date().toLocaleString(),
-        }))
+        }));
+        toast.success('Task Added Successfully');
+        setModalOpen(false);
+    }else{
+        toast.error('Title is required')
     }
 };
   return (
