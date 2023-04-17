@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { format } from 'date-fns';
 import {MdDelete, MdEdit} from 'react-icons/md';
 import { useDispatch } from 'react-redux';
@@ -6,6 +6,7 @@ import { toast } from 'react-hot-toast';
 import { deleteTodo } from '../slices/todoSlice';
 import styles from '../styles/modules/todoItem.module.scss'
 import { getClasses } from '../utils/getClasses';
+import ToDoModal from './ToDoModal';
 
 
 
@@ -15,17 +16,21 @@ function ToDoItem({todo}) {
 // get the dispatch
 const dispatch = useDispatch();
 
+// create state for modalopen
+const [updateModalOpen, setUpdateModalOpen] = useState(false);
+
   const handleDelete = () =>{
     dispatch(deleteTodo(todo.id));
     toast.success('ToDo Deleted Successfully')
   }
 
   const handleUpdate = () =>{
-    console.log('Editing..');
+    setUpdateModalOpen(true);
   }
 
   return (
-    <div className={styles.item}>
+    <>
+     <div className={styles.item}>
         <div className={styles.todoDetails}>
             []
             <div className={styles.texts}>
@@ -33,8 +38,8 @@ const dispatch = useDispatch();
                 <p className={styles.time}>{format(new Date(todo.time), 'p, MM/dd/yyyy')}</p>
             </div>
         </div>
-        <div className={styles.todoActions} onClick={handleDelete} onKeyDown={handleDelete} role='button' tabIndex={0}>
-          <div className={styles.icon}>
+        <div className={styles.todoActions} >
+          <div className={styles.icon} onClick={handleDelete} onKeyDown={handleDelete} role='button' tabIndex={0}>
             <MdDelete/>
           </div>
           <div className={styles.icon} onClick={handleUpdate} onKeyDown={handleUpdate} role='button' tabIndex={0}>
@@ -42,7 +47,10 @@ const dispatch = useDispatch();
           </div>
         </div>
     </div>
-  )
+    <ToDoModal todo={todo} type='update' modalOpen={updateModalOpen} setModalOpen={setUpdateModalOpen}/>
+    </>
+   
+  );
 }
 
 export default ToDoItem
