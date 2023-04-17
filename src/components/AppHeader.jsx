@@ -6,7 +6,7 @@ import ToDoModal from './ToDoModal';
 // eslint-disable-next-line arrow-body-style
 const AppHeader = () => {
 
-  const [modalOpen, setModalOpen] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className={styles.appHeader}>
         
