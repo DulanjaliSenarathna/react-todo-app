@@ -1,29 +1,37 @@
 # React Todo App.
 
-SVG for CheckBox: [mentioned in the video]
+A complete React js to-do application.
 
-```html
-<svg viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path
-		fill="none"
-		strokeMiterlimit="10"
-		strokeWidth="6"
-		d="M1.5 22L16 36.5L51.5 1"
-		strokeLinejoin="round"
-		strokeLinecap="round"
-	></path>
-</svg>
-```
+**live demo: [ecomify-iota.vercel.app/](ecomify-iota.vercel.app/)**
 
-## Starter files
+---
 
-You can find all the starter files in `starter-files` branch. You can to go to the `starter-files` branch and `download zip` the the starter files or You can clone the project and git checkout to `starter-files` branch.
+### Made with ❤️ by [Dulanjali Senarathna](https://www.linkedin.com/in/dulanjali-senarathna/)
+
+---
+
+## Project Description
+
+Ecomify is a todo web application, mainly focused on react js front-end development. I used css for styling. Also, this website used redux as a state management tool and also local storage. 
+
+Todo app has basic crud functionalities such as add todos, loading todos, delete todos, update todos, filtering todos based on their status. This application has smooth animations and transitions.
+
+## What I used
+
+- [React](https://reactjs.org/)
+- [React Redux](https://redux.js.org/)
+- [React icons](https://react-icons.netlify.com/)
+- [Framer Motion](https://www.npmjs.com/package/framer-motion)
+- More...
+
+## Requirements
+
+- Basic ReactJs knowledge
+- Basic HTML, CSS knowledge
 
 ## Getting Started
 
-The recommended way to get started with the project is Follow the `YouTube tutorial`. You will find all the step-by-step guides. Or you Can start the project on your own by following the guide below.
-
-After getting the starter files, you need to go the file directory and run
+After getting the project files, you need to go the file directory and run
 
 ```shell
 npm install
@@ -34,5 +42,30 @@ and after that start the dev server.
 ```shell
 npm start
 ```
+## Tools Used
+
+1. Favicon: [Flaticon.com](https://www.flaticon.com/)
+1. Code Editor: [VS Code](https://code.visualstudio.com/)
+
+---
+
+## FAQ
+
+### Q: What are the prerequisites?
+
+basics of html, css, javascript and some basic knowledge of react is enough to start this project. Rest you will learn in the tutorial.
+
+### Q: Who the project is for?
+
+The project is for the people who wanna get more skilled in `ReactJs`.
+
+---
+
+## Feedback
+
+If you have any feedback, please reach out to us at [Dulanjali Senarathna](https://www.behance.net/dulanjasenarathna)
 
 Happy Coding! 🚀
+
+# Website's screenshots
+
