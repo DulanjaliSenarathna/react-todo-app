@@ -2,7 +2,7 @@
 
 A complete React js to-do application.
 
-**live demo: [ecomify-iota.vercel.app/](ecomify-iota.vercel.app/)**
+**live demo: [react-todo-app-delta-seven.vercel.app](react-todo-app-delta-seven.vercel.app)**
 
 ---
 
