@@ -73,6 +73,7 @@ const handleSubmit = (e) => {
                 }))
             }else{
                 toast.error('No Changes Made');
+                return; // if no changes made, code will end by here. 
             }
        }
        setModalOpen(false);
