@@ -12,7 +12,7 @@ A complete React js to-do application.
 
 ## Project Description
 
-Ecomify is a todo web application, mainly focused on react js front-end development. I used css for styling. Also, this website used redux as a state management tool and also local storage. 
+This todo web application, mainly focused on react js front-end development. I used css for styling. Also, this website used redux as a state management tool and also local storage. 
 
 Todo app has basic crud functionalities such as add todos, loading todos, delete todos, update todos, filtering todos based on their status. This application has smooth animations and transitions.
 
